@@ -2,9 +2,9 @@
 
 
 
-hardware conversion cat5
-hardware
-firewall rules
+- hardware conversion cat5
+- hardware
+- firewall rules
 reverse proxy nginx
 letsencrypt ssl
 VPN
