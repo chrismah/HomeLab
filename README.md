@@ -1,10 +1,7 @@
 # HomeNetwork
 
 ## Table of Contents
-
-
-- hardware conversion cat5
-- hardware
+- Equipment
 - firewall rules
 - reverse proxy nginx
 - letsencrypt ssl
@@ -15,3 +12,8 @@
 - elastic stack monitoring
 - isolated vlans for IoT devices
 - firewall rules between vlans
+
+### Equipment
+- Unifi Security Gateway
+- Unifi POE Switch 
+- 3x Unifi Access Points
