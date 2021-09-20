@@ -1,4 +1,4 @@
-# HomeNetwork
+# Home Lab (Work in progress)
 
 ## Table of Contents
 - Equipment
