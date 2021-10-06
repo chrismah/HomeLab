@@ -1,5 +1,5 @@
 # Home Lab (Work in progress)
-I've setup a custom network configuration at home as both a learning project as well as for function. Listed below are the configurations and features that I've implemented.
+I've setup a custom network configuration at home as both a learning project as well as for security. Listed below are the configurations and features that I've implemented.
 
 ## Table of Contents
 - Network Topology
@@ -11,6 +11,7 @@ I've setup a custom network configuration at home as both a learning project as 
 - isolated vlans for IoT devices √
 - firewall rules between vlans √
 - VPN
+
 - Unraid Server
 -- nginx reverse proxy
 -- letsencrypt ssl
@@ -43,16 +44,23 @@ The following VLANs are configured on the network.
 - IoT (Internet of Things): All IoT devices such as thermostats, fire alarms, speakers, TVs, Nanoleafs, smart lights
 - Guest: Guest network
 
-#### Firewall Configuration
+#### Wireless Networks
 
+- Private
+- IoT
+- Guest
+
+#### Wireless Access Points
+Seamless roaming for all wireless networks achieved
+
+#### Firewall Configuration
 My network is setup to isolate all IoT devices on their own VLAN for added security. Clients on the IoT VLAN are unable to start connections across other VLANs but Private/Guest are able to start connections with IoT. Additional rules were required to allow specific connections from IoT to Private/Guest to allow for smart device functionality (ie. speakers, lights and other home automation).
 
 The following rules are in place:
 
 ![Screenshot of firewall rules]() 
 
-#### Wireless Access Points
-Seamless roaming 
+
 
 ### Unraid Server
 Main server hosting multiple services via virutal machines and docker containers
