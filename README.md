@@ -1,4 +1,4 @@
-# Home Lab (Work in progress)
+# Home Lab (Write up in progress)
 I've setup a custom network configuration at home as both a learning project as well as for security. Listed below are the configurations and features that I've implemented.
 
 ## Table of Contents
