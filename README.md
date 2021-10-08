@@ -33,13 +33,7 @@ The following VLANs are configured on the network.
 - Guest: Guest network
 
 #### Wireless Networks
-
-- Private
-- IoT
-- Guest
-
-#### Wireless Access Points
-Seamless roaming for all wireless networks achieved
+There is a wireless network configured for each VLAN. Seamless roaming between multiple access points was setup with RSSI tuning (Received Signal Strength Indication).
 
 #### Firewall Configuration
 My network is setup to isolate all IoT devices on their own VLAN for added security. Clients on the IoT VLAN are unable to start connections across other VLANs but Private/Guest are able to start connections with IoT. Additional rules were required to allow specific connections from IoT to Private/Guest to allow for smart device functionality (ie. speakers, lights and other home automation).
