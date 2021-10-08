@@ -5,20 +5,8 @@ I've setup a custom network configuration at home as both a learning project as 
 - Network Topology
 - Network Hardware
 - Network Configuration
-
-
-- firewall rules √
-- isolated vlans for IoT devices √
-- firewall rules between vlans √
-- VPN
-
 - Unraid Server
--- nginx reverse proxy
--- letsencrypt ssl
--- security onion VM
----  elastic stack monitoring
-- opencanary honeypot
-- wazuh EDR
+
 
 ### Network Topology
 -----
@@ -63,5 +51,8 @@ The following rules are in place:
 
 
 ### Unraid Server
-Main server hosting multiple services via virutal machines and docker containers
+-----
+
+Main server hosting multiple services via virutal machines and containers. Virtual machines supported by Linux Kernal Virtual Machine (KVM) and containers supported by Docker.
+
 
