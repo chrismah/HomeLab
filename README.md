@@ -1,5 +1,11 @@
 # Home Lab (Write up in progress)
-I've setup a custom network configuration at home as both a learning project as well as for security. Listed below are the configurations and features that I've implemented.
+I've setup a custom network configuration at home for defence-in-depth as an experiment and learning experience. I'm using Ubiquitous networking equipment to manage the network with multiple access points across multiple floors. I have created multiple virtual local area networks (VLAN) to personal devices, guest devices and Internet of Things (IoT) devices. Next I've created firewall rules to segregate the VLANs from each other with some exceptions made for personal devices to be able to access IoT devices. I've also setup a honeypot running on the IoT network as another layer of defence.
+
+On the monitoring side I have a virtual machine running Security Onion with all network traffic being mirrored to it as well as information from Wazuh EDR running on hosts.
+
+In addition to this configuration I have some extra elements setup for various things such as a L2VPN, Nextcloud storage, Plex Media Server, Pihole and DNSCrypt.
+
+More details are listed below.
 
 ## Table of Contents
 - Network Topology
@@ -7,6 +13,7 @@ I've setup a custom network configuration at home as both a learning project as 
 - Network Configuration
 - Unraid Server
 
+-----
 
 ### Network Topology
 -----
@@ -18,6 +25,7 @@ I've setup a custom network configuration at home as both a learning project as 
 - Unifi Security Gateway
 - 2x Unifi POE Switch 
 - 3x Unifi Access Points
+- Unifi Cloudkey
 - Unraid Server
 
 ### Network Configuration
